@@ -23,9 +23,13 @@ function playC4() {
 }
 
 
-const testSlider = document.getElementById("test-slider");
-if (!(testSlider instanceof HTMLInputElement)) throw Error();
+const m1Slider = document.getElementById("m1-slider");
+if (!(m1Slider instanceof HTMLInputElement)) throw Error();
 
-testSlider.oninput = () => {
-    console.log("Slider value:", testSlider.value);
+m1Slider.oninput = () => {
+    const output = midi.outputs.values().next().value;
+    if (!(output instanceof MIDIOutput)) throw Error();
+    const value = Number.parseInt(m1Slider.value);
+    output.send([176, 1, value]);
+    console.log("Slider value:", value);
 };
