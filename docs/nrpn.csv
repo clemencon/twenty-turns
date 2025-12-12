@@ -1,12 +1,12 @@
 Category,Parameter,NRPN (x/y/z),Min,Max,Min via MIDI-OX,MAX via MIDI-OX
 Voice,Polyphony,0/256/512,0,1,,
 Voice,Unison,1/257/513,0,3,,
-Voice,UsnDetune,2/258/514,0,100,,
-Voice,Portamnto,3/259/515,0,2,,
-Voice,PortaType,4/260/516,0,3,,
-Voice,PortaTime,5/261/517,0,127,,
-Voice,Pitch Whl,6/262/518,0,1,,
-Voice,AnlgDrift,7/263/519,0,100,,
+Voice,Unison Detune,2/258/514,0,100,,
+Voice,Portamento,3/259/515,0,2,,
+Voice,Portamento Type,4/260/516,0,3,,
+Voice,Portamento Time,5/261/517,0,127,,
+Voice,Pitch Wheel,6/262/518,0,1,,
+Voice,Analog Drift,7/263/519,0,100,,
 Voice,Osc Sync,8/264/520,0,4,,
 Voice,FM Amount,9/265/521,0,1000,,
 Voice,FM Type,10/266/522,0,5,,
@@ -15,145 +15,145 @@ Osc 1,Waveshape,12/268/524,-100,100,16284-16383,0-100
 Osc 1,Octave,13/269/525,-3,3,16381-16383,0-3
 Osc 1,Transpose,14/270/526,-7,7,16377-16383,0-7
 Osc 1,Pitch,15/271/527,-999,999,15385-16383,0-999
-Osc 1,PWhlRange,16/272/528,0,12,,
+Osc 1,Pitch Wheel Range,16/272/528,0,12,,
 Osc 2,Waveform,17/273/529,0,2,,
 Osc 2,Waveshape,18/274/530,-100,100,16284-16383,0-100
 Osc 2,Octave,19/275/531,-3,3,16381-16383,0-3
 Osc 2,Transpose,20/276/532,-7,7,16377-16383,0-7
 Osc 2,Pitch,21/277/533,-999,999,15385-16383,0-999
-Osc 2,PWhlRange,22/278/534,0,12,,
+Osc 2,Pitch Wheel Range,22/278/534,0,12,,
 Osc 3,Waveform,23/279/535,0,2,,
 Osc 3,Waveshape,24/280/536,-100,100,16284-16383,0-100
 Osc 3,Octave,25/281/537,-3,3,16381-16383,0-3
 Osc 3,Transpose,26/282/538,-7,7,16377-16383,0-7
 Osc 3,Pitch,27/283/539,-999,999,15385-16383,0-999
-Osc 3,PWhlRange,28/284/540,0,12,,
+Osc 3,Pitch Wheel Range,28/284/540,0,12,,
 Pre,Osc 1 Level,29/285/541,0,100,,
 Pre,Osc 2 Level,30/286/542,0,100,,
 Pre,Osc 3 Level,31/287/543,0,100,,
-Pre,Ringm Level,32/288/544,0,100,,
+Pre,Ring Modulator Level,32/288/544,0,100,,
 Pre,Noise Level,33/289/545,0,100,,
-Pre,ExtIn Level,34/290/546,0,100,,
-Pre,Osc 1 Balnc,35/291/547,0,100,16334-16383,0-50
-Pre,Osc 2 Balnc,36/292/548,0,100,16334-16383,0-50
-Pre,Osc 3 Balnc,37/293/549,0,100,16334-16383,0-50
-Pre,Ringm Balnc,38/294/550,0,100,16334-16383,0-50
-Pre,Noise Balnc,39/295/551,0,100,16334-16383,0-50
-Pre,ExtIn Balnc,40/296/552,-100,100,16284-16383,0-100
-Pre,Series Lvl,41/297/553,0,100,,
+Pre,External Input Level,34/290/546,0,100,,
+Pre,Osc 1 Balance,35/291/547,0,100,16334-16383,0-50
+Pre,Osc 2 Balance,36/292/548,0,100,16334-16383,0-50
+Pre,Osc 3 Balance,37/293/549,0,100,16334-16383,0-50
+Pre,Ring Modulator Balance,38/294/550,0,100,16334-16383,0-50
+Pre,Noise Balance,39/295/551,0,100,16334-16383,0-50
+Pre,External Input Balance,40/296/552,-100,100,16284-16383,0-100
+Pre,Series Level,41/297/553,0,100,,
 Pre,Noise Type,42/298/554,0,1,,
 Filter 1,Type,43/299/555,0,20,,
 Filter 1,Freq,44/300/556,0,920,,
 Filter 1,Res,45/301/557,0,100,,
-Filter 1,Keytrk,46/302/558,-100,200,16286-16383,0-200
-Filter 1,EnvAmt,47/303/559,-100,100,16284-16383,0-100
+Filter 1,Key Tracking,46/302/558,-100,200,16286-16383,0-200
+Filter 1,Envelope Amount,47/303/559,-100,100,16284-16383,0-100
 Filter 2,Offset,48/304/560,0,1,,
 Filter 2,Type,49/305/561,0,20,,
 Filter 2,Freq (Offset 0) (Types 0/1/3/7/11/12),50/306/562,0,1023,,
 Filter 2,Freq (Offset 0) (Remaining types),158/414/670,0,920,,
 Filter 2,Freq (Offset 1),158/414/670,-400,400,15984-16383,0-400
 Filter 2,Res,51/307/563,0,100,,
-Filter 2,Keytrk,52/308/564,-100,200,16284-16383,0-200
-Filter 2,EnvAmt,53/309/565,-100,100,16284-16383,0-100
-Post,Fltr 1 Lvl,54/310/566,0,100,,
-Post,Fltr 2 Lvl,55/311/567,0,100,,
-Post,Preflt Lvl,56/312/568,0,100,,
-Post,Fltr 1 Pan,57/313/569,-100,100,16284-16383,0-100
-Post,Fltr 2 Pan,58/314/570,-100,100,16284-16383,0-100
-Post,Preflt Pan,59/315/571,-100,100,16284-16383,0-100
-Post,PreFlt Src,60/316/572,0,6,,
-Post,Flt1 Sign,61/317/573,0,1,,
+Filter 2,Key Tracking,52/308/564,-100,200,16284-16383,0-200
+Filter 2,Envelope Amount,53/309/565,-100,100,16284-16383,0-100
+Post,Filter 1 Level,54/310/566,0,100,,
+Post,Filter 2 Level,55/311/567,0,100,,
+Post,Pre-filter Level,56/312/568,0,100,,
+Post,Filter 1 Pan,57/313/569,-100,100,16284-16383,0-100
+Post,Filter 2 Pan,58/314/570,-100,100,16284-16383,0-100
+Post,Pre-filter Pan,59/315/571,-100,100,16284-16383,0-100
+Post,Pre-filter Source,60/316/572,0,6,,
+Post,Filter 1 Signal,61/317/573,0,1,,
 Out,Drive Type,62/318/574,0,6,,
 Out,Drive Level,63/319/575,0,100,,
-Out,Pgm Level,64/320/576,0,100,,
-Out,Fx Mix,65/321/577,0,100,16334-16383,0-50
-Out,Fx Balance,230/486/742,0,100,16334-16383,0-50
+Out,Program Level,64/320/576,0,100,,
+Out,Effects Mix,65/321/577,0,100,16334-16383,0-50
+Out,Effects Balance,230/486/742,0,100,16334-16383,0-50
 Fx1,Type,231/487/743,0,6,,
-Fx1 (bypass/pitch/fx),Feedbak,232/488/744,0,100,,
-Fx1 (bypass/pitch/fx),ManlDly,233/489/745,0,100,,
-Fx1 (bypass/pitch/fx),LfoRate,234/490/746,0,127,,
-Fx1 (bypass/pitch/fx),LfoDpth,235/491/747,0,100,,
-Fx1 (bypass/pitch/fx),LfoShap,236/492/748,0,1,,
-Fx1 (bypass/pitch/fx),LfoSync,237/493/749,0,1,,
-Fx1 (phaser super),Feedbak,232/488/744,0,100,,
-Fx1 (phaser super),NtchFrq,233/489/745,0,100,,
-Fx1 (phaser super),LfoRate,234/490/746,0,127,,
-Fx1 (phaser super),LfoDpth,235/491/747,0,100,,
-Fx1 (phaser super),LfoShap,236/492/748,0,1,,
+Fx1 (bypass/pitch/fx),Feedback,232/488/744,0,100,,
+Fx1 (bypass/pitch/fx),Manual Delay,233/489/745,0,100,,
+Fx1 (bypass/pitch/fx),LFO Rate,234/490/746,0,127,,
+Fx1 (bypass/pitch/fx),LFO Depth,235/491/747,0,100,,
+Fx1 (bypass/pitch/fx),LFO Shape,236/492/748,0,1,,
+Fx1 (bypass/pitch/fx),LFO Sync,237/493/749,0,1,,
+Fx1 (phaser super),Feedback,232/488/744,0,100,,
+Fx1 (phaser super),Notch Frequency,233/489/745,0,100,,
+Fx1 (phaser super),LFO Rate,234/490/746,0,127,,
+Fx1 (phaser super),LFO Depth,235/491/747,0,100,,
+Fx1 (phaser super),LFO Shape,236/492/748,0,1,,
 Fx1 (phaser super),Stages,237/493/749,0,5,,
-Fx1 (phaser super),LfoSync,238/494/750,0,1,,
-Fx1 (phaser string),Feedbak,232/488/744,0,100,,
-Fx1 (phaser string),NtchFrq,233/489/745,0,100,,
-Fx1 (phaser string),LfoRate,234/490/746,0,127,,
-Fx1 (phaser string),LfoDpth,235/491/747,0,100,,
-Fx1 (phaser string),LfoShap,236/492/748,0,1,,
-Fx1 (phaser string),LfoSync,237/493/749,0,1,,
-Fx1 (vocoder 40-band),AnlGain,232/488/744,-100,100,16284-16383,0-100
-Fx1 (vocoder 40-band),Sibilnc,233/489/745,0,100,,
+Fx1 (phaser super),LFO Sync,238/494/750,0,1,,
+Fx1 (phaser string),Feedback,232/488/744,0,100,,
+Fx1 (phaser string),Notch Frequency,233/489/745,0,100,,
+Fx1 (phaser string),LFO Rate,234/490/746,0,127,,
+Fx1 (phaser string),LFO Depth,235/491/747,0,100,,
+Fx1 (phaser string),LFO Shape,236/492/748,0,1,,
+Fx1 (phaser string),LFO Sync,237/493/749,0,1,,
+Fx1 (vocoder 40-band),Analog Gain,232/488/744,-100,100,16284-16383,0-100
+Fx1 (vocoder 40-band),Sibilance,233/489/745,0,100,,
 Fx1 (vocoder 40-band),Decay,234/490/746,0,100,,
-Fx1 (vocoder 40-band),BndShft,235/491/747,-100,100,16284-16383,0-100
-Fx1 (vocoder 40-band),SynthIn,236/492/748,0,3,,
-Fx1 (vocoder 40-band),AnlysIn,237/493/749,0,3,,
-Fx1 (vocoder 40-band),AnlSMix,238/494/750,0,100,,
+Fx1 (vocoder 40-band),Band Shift,235/491/747,-100,100,16284-16383,0-100
+Fx1 (vocoder 40-band),Synth Input,236/492/748,0,3,,
+Fx1 (vocoder 40-band),Analysis Input,237/493/749,0,3,,
+Fx1 (vocoder 40-band),Analysis Mix,238/494/750,0,100,,
 Fx2,Type,245/501/757,0,6,,
-Fx2 (chorus/flanger/delay mono/delay stereo),DelayTm (Sync 0),246/502/758,1,680,,
-Fx2 (chorus/flanger/delay mono/delay stereo),DelayTm (Sync 1),250/506/762,12,24,,
-Fx2 (chorus/flanger/delay mono/delay stereo),Regen,247/503/759,0,100,,
-Fx2 (chorus/flanger/delay mono/delay stereo),Bright,248/504/760,0,100,,
+Fx2 (chorus/flanger/delay mono/delay stereo),Delay Time (Sync 0),246/502/758,1,680,,
+Fx2 (chorus/flanger/delay mono/delay stereo),Delay Time (Sync 1),250/506/762,12,24,,
+Fx2 (chorus/flanger/delay mono/delay stereo),Regeneration,247/503/759,0,100,,
+Fx2 (chorus/flanger/delay mono/delay stereo),Brightness,248/504/760,0,100,,
 Fx2 (chorus/flanger/delay mono/delay stereo),Sync,249/505/761,0,1,,
-Fx2 (delay split L/R),DlyLeft,246/502/758,1,340,,
-Fx2 (delay split L/R),Regen,247/503/759,0,100,,
-Fx2 (delay split L/R),Bright,248/504/760,0,100,,
-Fx2 (delay split L/R),DlRight,249/505/761,1,340,,
-Fx2 (reverb hall/plate/room),Diffusn,246/502/758,0,100,,
+Fx2 (delay split L/R),Delay Left,246/502/758,1,340,,
+Fx2 (delay split L/R),Regeneration,247/503/759,0,100,,
+Fx2 (delay split L/R),Brightness,248/504/760,0,100,,
+Fx2 (delay split L/R),Delay Right,249/505/761,1,340,,
+Fx2 (reverb hall/plate/room),Diffusion,246/502/758,0,100,,
 Fx2 (reverb hall/plate/room),Decay,247/503/759,0,100,,
-Fx2 (reverb hall/plate/room),Bright,248/504/760,0,100,,
+Fx2 (reverb hall/plate/room),Brightness,248/504/760,0,100,,
 Fx2 (reverb hall/plate/room),Color,249/505/761,0,100,,
-Env 1,Atk Time,66/322/578,0,255,,
-Env 1,Atk Slope,67/323/579,0,2,,
-Env 1,Dcy Time,68/324/580,0,255,,
-Env 1,Dcy Slope,69/325/581,0,2,,
-Env 1,Sus Time,70/326/582,0,256,,
-Env 1,Sus Level,71/327/583,0,100,,
-Env 1,Rel Time,72/328/584,0,256,,
-Env 1,Rel Slope,73/329/585,0,2,,
+Env 1,Attack Time,66/322/578,0,255,,
+Env 1,Attack Slope,67/323/579,0,2,,
+Env 1,Decay Time,68/324/580,0,255,,
+Env 1,Decay Slope,69/325/581,0,2,,
+Env 1,Sustain Time,70/326/582,0,256,,
+Env 1,Sustain Level,71/327/583,0,100,,
+Env 1,Release Time,72/328/584,0,256,,
+Env 1,Release Slope,73/329/585,0,2,,
 Env 1,Velocity,74/330/586,0,100,,
 Env 1,Reset,75/331/587,0,1,,
 Env 1,Freerun,76/332/588,0,1,,
 Env 1,Loop,77/333/589,0,3,,
-Env 1,SusPedal,78/334/590,0,1,,
-Env 2,Atk Time,79/335/591,0,255,,
-Env 2,Atk Slope,80/336/592,0,2,,
-Env 2,Dcy Time,81/337/593,0,255,,
-Env 2,Dcy Slope,82/338/594,0,2,,
-Env 2,Sus Time,83/339/595,0,256,,
-Env 2,Sus Level,84/340/596,-100,100,16284-16383,0-100
+Env 1,Sustain Pedal,78/334/590,0,1,,
+Env 2,Attack Time,79/335/591,0,255,,
+Env 2,Attack Slope,80/336/592,0,2,,
+Env 2,Decay Time,81/337/593,0,255,,
+Env 2,Decay Slope,82/338/594,0,2,,
+Env 2,Sustain Time,83/339/595,0,256,,
+Env 2,Sustain Level,84/340/596,-100,100,16284-16383,0-100
 Env 2,Release Time,85/341/597,0,256,,
 Env 2,Release Slope,86/342/598,0,2,,
 Env 2,Velocity,87/343/599,0,100,,
 Env 2,Reset,88/344/600,0,1,,
 Env 2,Freerun,89/345/601,0,1,,
 Env 2,Loop,90/346/602,0,3,,
-Env 2,SusPedal,91/347/603,0,1,,
-Env 3,Atk Time,92/348/604,0,255,,
-Env 3,Atk Slope,93/349/605,0,2,,
-Env 3,Dcy Time,94/350/606,0,255,,
-Env 3,Dcy Slope,95/351/607,0,2,,
-Env 3,Sus Time,96/352/608,0,256,,
-Env 3,Sus Level,97/353/609,-100,100,16284-16383,0-100
-Env 3,Rel Time,98/354/610,0,256,,
-Env 3,Rel Slope,99/355/611,0,2,,
+Env 2,Sustain Pedal,91/347/603,0,1,,
+Env 3,Attack Time,92/348/604,0,255,,
+Env 3,Attack Slope,93/349/605,0,2,,
+Env 3,Decay Time,94/350/606,0,255,,
+Env 3,Decay Slope,95/351/607,0,2,,
+Env 3,Sustain Time,96/352/608,0,256,,
+Env 3,Sustain Level,97/353/609,-100,100,16284-16383,0-100
+Env 3,Release Time,98/354/610,0,256,,
+Env 3,Release Slope,99/355/611,0,2,,
 Env 3,Velocity,100/356/612,0,100,,
 Env 3,Reset,101/357/613,0,1,,
 Env 3,Freerun,102/358/614,0,1,,
 Env 3,Loop,103/359/615,0,3,,
-Env 3,SusPedal,104/360/616,0,1,,
-LFO 1,TempoSync,105/361/617,0,1,,
+Env 3,Sustain Pedal,104/360/616,0,1,,
+LFO 1,Tempo Sync,105/361/617,0,1,,
 LFO 1,Rate (Sync 0),106/362/618,0,1023,,
 LFO 1,Rate (Sync 1),159/415/671,0,24,,
 LFO 1,Reset,107/363/619,0,6,,
 LFO 1,M1 Slider,108/364/620,0,100,,
-LFO 2,TempoSync,109/365/621,0,1,,
+LFO 2,Tempo Sync,109/365/621,0,1,,
 LFO 2,Rate (Sync 0),110/366/622,0,1023,,
 LFO 2,Rate (Sync 1),160/416/672,0,24,,
 LFO 2,Reset,111/367/623,0,6,,
@@ -201,51 +201,51 @@ Track,Point 14,151/407/663,-100,100,16284-16383,0-100
 Track,Point 15,152/408/664,-100,100,16284-16383,0-100
 Track,Point 16,153/409/665,-100,100,16284-16383,0-100
 Mod,Mod 1 Source,180/436/692,0,114,,
-Mod,Mod 1 Dest,181/437/693,0,77,,
+Mod,Mod 1 Destination,181/437/693,0,77,,
 Mod,Mod 1 Level,182/438/694,-1000,1000,15384-16383,0-1000
 Mod,Mod 1 Offset,183/439/695,-1000,1000,15384-16383,0-1000
 Mod,Mod 2 Source,184/440/696,0,114,,
-Mod,Mod 2 Dest,185/441/697,0,77,,
+Mod,Mod 2 Destination,185/441/697,0,77,,
 Mod,Mod 2 Level,186/442/698,-1000,1000,15384-16383,0-1000
 Mod,Mod 2 Offset,187/443/699,-1000,1000,15384-16383,0-1000
 Mod,Mod 3 Source,188/444/700,0,114,,
-Mod,Mod 3 Dest,189/445/701,0,77,,
+Mod,Mod 3 Destination,189/445/701,0,77,,
 Mod,Mod 3 Level,190/446/702,-1000,1000,15384-16383,0-1000
 Mod,Mod 3 Offset,191/447/703,-1000,1000,15384-16383,0-1000
 Mod,Mod 4 Source,192/448/704,0,114,,
-Mod,Mod 4 Dest,193/449/705,0,77,,
+Mod,Mod 4 Destination,193/449/705,0,77,,
 Mod,Mod 4 Level,194/450/706,-1000,1000,15384-16383,0-1000
 Mod,Mod 4 Offset,195/451/707,-1000,1000,15384-16383,0-1000
 Mod,Mod 5 Source,196/452/708,0,114,,
-Mod,Mod 5 Dest,197/453/709,0,77,,
+Mod,Mod 5 Destination,197/453/709,0,77,,
 Mod,Mod 5 Level,198/454/710,-1000,1000,15384-16383,0-1000
 Mod,Mod 5 Offset,199/455/711,-1000,1000,15384-16383,0-1000
 Mod,Mod 6 Source,200/456/712,0,114,,
-Mod,Mod 6 Dest,201/457/713,0,77,,
+Mod,Mod 6 Destination,201/457/713,0,77,,
 Mod,Mod 6 Level,202/458/714,-1000,1000,15384-16383,0-1000
 Mod,Mod 6 Offset,203/459/715,-1000,1000,15384-16383,0-1000
 Mod,Mod 7 Source,204/460/716,0,114,,
-Mod,Mod 7 Dest,205/461/717,0,77,,
+Mod,Mod 7 Destination,205/461/717,0,77,,
 Mod,Mod 7 Level,206/462/718,-1000,1000,15384-16383,0-1000
 Mod,Mod 7 Offset,207/463/719,-1000,1000,15384-16383,0-1000
 Mod,Mod 8 Source,208/464/720,0,114,,
-Mod,Mod 8 Dest,209/465/721,0,77,,
+Mod,Mod 8 Destination,209/465/721,0,77,,
 Mod,Mod 8 Level,210/466/722,-1000,1000,15384-16383,0-1000
 Mod,Mod 8 Offset,211/467/723,-1000,1000,15384-16383,0-1000
 Mod,Mod 9 Source,212/468/724,0,114,,
-Mod,Mod 9 Dest,213/469/725,0,77,,
+Mod,Mod 9 Destination,213/469/725,0,77,,
 Mod,Mod 9 Level,214/470/726,-1000,1000,15384-16383,0-1000
 Mod,Mod 9 Offset,215/471/727,-1000,1000,15384-16383,0-1000
 Mod,Mod 10 Source,216/472/728,0,114,,
-Mod,Mod 10 Dest,217/473/729,0,77,,
+Mod,Mod 10 Destination,217/473/729,0,77,,
 Mod,Mod 10 Level,218/474/730,-1000,1000,15384-16383,0-1000
 Mod,Mod 10 Offset,219/475/731,-1000,1000,15384-16383,0-1000
 Mod,Mod 11 Source,220/476/732,0,114,,
-Mod,Mod 11 Dest,221/477/733,0,77,,
+Mod,Mod 11 Destination,221/477/733,0,77,,
 Mod,Mod 11 Level,222/478/734,-1000,1000,15384-16383,0-1000
 Mod,Mod 11 Offset,223/479/735,-1000,1000,15384-16383,0-1000
 Mod,Mod 12 Source,224/480/736,0,114,,
-Mod,Mod 12 Dest,225/481/737,0,77,,
+Mod,Mod 12 Destination,225/481/737,0,77,,
 Mod,Mod 12 Level,226/482/738,-1000,1000,15384-16383,0-1000
 Mod,Mod 12 Offset,227/483/739,-1000,1000,15384-16383,0-1000
 Controllers,Pitch Wheel,,-8192,8191,,
