@@ -1,0 +1,11 @@
+# Wait 3 days before installing new package versions.
+# Most malicious packages are caught and removed within 24-72 hours.
+minimumReleaseAge: 4320
+
+# Skip dependency resolution when the lockfile is current.
+# Ensure reproducible builds and fail fast if the lockfile is out of sync.
+preferFrozenLockfile: true
+
+# Pin exact versions ("1.2.3" not "^1.2.3") when adding packages.
+# Prevent unexpected updates and ensure all environments use identical dependency versions.
+savePrefix: ''
