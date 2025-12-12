@@ -2,7 +2,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-A web-based patch editor for the Alesis Micron synthesizer that runs entirely in your web browser.
+A web-based **patch editor for the Alesis Micron** synthesizer that runs entirely in your web browser.
 No installation required, just connect your Micron via MIDI and start tweaking.
 
 ## About
@@ -16,7 +16,7 @@ I still remember [Dorian Concept fooling around](https://youtu.be/F8Kiw4aoex4?si
 Twenty years later, I bought it again.
 Let's expand the interface!
 
-## Dev Requirements
+## Requirements
 
 - [Node.js runtime](https://nodejs.org)
 - [pnpm package manager](https://pnpm.io)
@@ -65,3 +65,16 @@ pnpm preview
 # Run linter/formatter with auto-fix.
 pnpm fix
 ```
+
+## Acknowledgments
+
+This project is not affiliated with, endorsed by, or sponsored by Alesis or inMusic Brands, Inc.
+"Alesis" and "Micron" are trademarks of inMusic Brands, Inc.
+
+This repository includes reference documentation:
+
+- [Reference manual](docs/reference-manual.pdf)
+- [Service manual](docs/service-manual.pdf)
+
+These manuals are © Alesis/inMusic and are included solely for reference to support development of this patch editor.
+They are **not** covered by this project's GPL v3 license and remain the property of their respective copyright holders.
