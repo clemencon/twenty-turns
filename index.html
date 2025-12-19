@@ -8,14 +8,21 @@
 <body>
 <h1>Twenty ☉ Turns</h1>
 
-<label for="osc-1-pitch">Oscillator 1 Pitch</label>
-<input type="range" id="osc-1-pitch" name="osc-1-pitch" min="0" max="127"/>
+<!--ju: Display the slider value.-->
+<!--ju: Ensure the steps are also matching the synth.-->
+<!--ju: Start using different input types where suited.-->
 
 <label for="analog-drift">Analog Drift</label>
-<input type="range" id="analog-drift" name="analog-drift" min="0" max="127"/>
+<input type="range" id="analog-drift" name="analog-drift" min="0" max="100"/>
+
+<label for="analog-drift">Analog Drift</label>
+<input type="range" id="analog-drift" name="analog-drift" min="0" max="100"/>
 
 <label for="m1-slider">m1 Slider</label>
 <input type="range" id="m1-slider" name="m1-slider" min="0" max="127"/>
+
+<label for="voice-fm-amount">Voice FM Amount</label>
+<input type="range" id="voice-fm-amount" name="voice-fm-amount" min="0" max="1000"/>
 
 <button id="c4">C4</button>
 

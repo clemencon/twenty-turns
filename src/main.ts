@@ -33,3 +33,45 @@ m1Slider.oninput = () => {
     output.send([176, 1, value]);
     console.log("Slider value:", value);
 };
+
+const voiceFmAmountSlider = document.getElementById("voice-fm-amount");
+if (!(voiceFmAmountSlider instanceof HTMLInputElement)) throw Error();
+
+voiceFmAmountSlider.oninput = () => {
+    const output = midi.outputs.values().next().value;
+    if (!(output instanceof MIDIOutput)) throw Error();
+    const value = Number.parseInt(voiceFmAmountSlider.value);
+
+    // Send NRPN message for Voice FM Amount (NRPN 9)
+    // NRPN MSB (CC 99) = 0
+    // NRPN LSB (CC 98) = 9
+    // Data Entry MSB (CC 6) = value >> 7
+    // Data Entry LSB (CC 38) = value & 0x7F
+    output.send([0xB0, 99, 0]);           // NRPN MSB
+    output.send([0xB0, 98, 9]);           // NRPN LSB (parameter 9)
+    output.send([0xB0, 6, value >> 7]);   // Data Entry MSB
+    output.send([0xB0, 38, value & 0x7F]); // Data Entry LSB
+
+    console.log("Voice FM Amount:", value);
+};
+
+const analogDriftSlider = document.getElementById("analog-drift");
+if (!(analogDriftSlider instanceof HTMLInputElement)) throw Error();
+
+analogDriftSlider.oninput = () => {
+    const output = midi.outputs.values().next().value;
+    if (!(output instanceof MIDIOutput)) throw Error();
+    const value = Number.parseInt(analogDriftSlider.value);
+
+    // Send NRPN message for Analog Drift (NRPN 7)
+    // NRPN MSB (CC 99) = 0
+    // NRPN LSB (CC 98) = 7
+    // Data Entry MSB (CC 6) = value >> 7
+    // Data Entry LSB (CC 38) = value & 0x7F
+    output.send([0xB0, 99, 0]);           // NRPN MSB
+    output.send([0xB0, 98, 7]);           // NRPN LSB (parameter 7)
+    output.send([0xB0, 6, value >> 7]);   // Data Entry MSB
+    output.send([0xB0, 38, value & 0x7F]); // Data Entry LSB
+
+    console.log("Analog Drift:", value);
+};
