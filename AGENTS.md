@@ -31,3 +31,4 @@ Run tests with `pnpm vitest run`, or a single file with `pnpm vitest run path/to
 ## Domain reference (`docs/`)
 
 - `docs/nrpn.csv` lists every Micron parameter that can be controlled over MIDI NRPN. Columns: category, parameter, three NRPN numbers `x/y/z` (offset by 256, e.g. `0/256/512`), and min/max values. For signed parameters, the "via MIDI-OX" columns show the 14-bit wire encoding: a negative value `v` is sent as `16384 + v` (so -1 is 16383), and positive values are sent as-is. The `Controllers` rows at the end have no NRPN number.
+- `docs/nrpn-wiki-page.md` Wikipedia page with info about NRPN messages.
