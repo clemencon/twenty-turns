@@ -1,3 +1,6 @@
+allowBuilds:
+  esbuild: true
+
 # Wait 3 days before installing new package versions.
 # Most malicious packages are caught and removed within 24-72 hours.
 minimumReleaseAge: 4320
